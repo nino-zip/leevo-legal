@@ -61,14 +61,15 @@
       <li><strong>Project data</strong>, including project names, timeline metadata, layout actions, source states, export settings, and watermark settings.</li>
       <li><strong>Media files</strong>, including raw recordings, autosaves, recovered recording chunks, exported videos, and custom watermark images.</li>
       <li><strong>Local monetization state</strong>, such as local export-credit counters used to control watermark-free exports in the current implementation.</li>
+      <li><strong>Purchase and entitlement information</strong>, processed by Apple and RevenueCat when purchases are configured, such as product identifiers, purchase status, renewal or expiration dates, receipt data, and an anonymous app user identifier needed to unlock Pro.</li>
     </ul>
 
     <h2>2. Information Leevo Does Not Collect</h2>
     <p>
-      In the current implementation, Leevo does not require an account, does not upload
-      your recordings to Leevo servers, does not sell personal data, does not use third-party
-      advertising SDKs, does not track you across apps or websites, and does not collect
-      analytics.
+      Leevo does not require a Leevo account, does not upload your recordings to Leevo
+      servers, does not sell personal data, does not use third-party advertising SDKs, does
+      not track you across apps or websites, and does not collect product analytics in the
+      current implementation.
     </p>
 
     <h2>3. Permissions</h2>
@@ -93,22 +94,27 @@
       <li>Render MP4 exports from raw media and timeline actions.</li>
       <li>Apply Leevo watermark, custom watermark, or watermark-free export behavior.</li>
       <li>Remember local export-credit state.</li>
+      <li>Display subscription options, process purchases through Apple, restore purchases, prevent fraud, and unlock or revoke Pro features.</li>
     </ul>
 
     <h2>5. Third-Party Services</h2>
     <p>
-      The current implementation does not share user recordings, project metadata, or usage
-      data with third-party analytics, advertising, or cloud services.
+      Leevo does not share recordings, raw media, project files, timeline metadata, or custom
+      watermark images with third-party analytics, advertising, or cloud storage services.
     </p>
     <p>
-      If future versions enable subscriptions, lifetime purchases, or other in-app purchases,
-      Apple StoreKit and the App Store may process purchase, subscription, refund, and entitlement
-      information under Apple's terms and privacy policies.
+      Apple processes App Store purchases under Apple's terms and privacy policies. RevenueCat
+      is used to validate subscriptions and may process purchase, subscription, entitlement,
+      device, app, receipt, and anonymous app user identifier data needed to provide Pro access.
     </p>
     <ul>
       <li>
         Apple Privacy Policy:
         <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>
+      </li>
+      <li>
+        RevenueCat Privacy Policy:
+        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>
       </li>
     </ul>
 
@@ -125,6 +131,8 @@
       <li>You can manage exported files and project packages from Finder.</li>
       <li>You can remove local app data by deleting the App and its associated local files.</li>
       <li>macOS permissions can be revoked in System Settings.</li>
+      <li>Deleting Leevo or local app data does not cancel an active App Store subscription; subscriptions must be managed from your Apple Account.</li>
+      <li>Apple and RevenueCat retain purchase and entitlement records according to their own policies and legal obligations.</li>
     </ul>
 
     <h2>7. Children</h2>
